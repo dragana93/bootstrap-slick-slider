@@ -5,11 +5,11 @@ const path = require("path");
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + "/dist/<bootstrap-slick-slider>"));
+app.use(express.static(__dirname + "/dist/bootstrap-slick-slider"));
 
 app.get("/*", function(req, res) {
   res.sendFile(
-    path.join(__dirname + "/dist/<bootstrap-slick-slider>/index.html")
+    path.join(__dirname + "/dist/bootstrap-slick-slider/index.html")
   );
 });
 
