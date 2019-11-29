@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
+    "postinstall": "ng build --output-path bootstrap-slick-slider --aot -prod"
   },
   "engines": {
     "node": "12.3.1",
